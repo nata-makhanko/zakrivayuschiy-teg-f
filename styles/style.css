@@ -13,7 +13,7 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 
 */
-
+ 
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
@@ -121,19 +121,7 @@
   position: absolute;
   left: -22px;
   top: -1px;
-  animation: shiftAnimation 0.5s ease-in-out infinite alternate;
-}
-
-@keyframes shiftAnimation {
-  0% {
-    transform: translateX(0); 
-  }
-  50% {
-    transform: translateX(4px);
-  }
-  100% {
-    transform: translateX(0); 
-  }
+  animation: shift-animation 0.5s ease-in-out infinite alternate;
 }
 
 .main {
@@ -204,43 +192,12 @@
   margin-inline-end: 12px;
 }
 
-.like-icon {
-  transform-origin: center;
-  cursor: pointer;
+.card__icon-button:focus {
+  outline: none;
 }
 
-.heart {
-  
-}
-
-.contour {
-  fill: var(--heart-contour);
-  transition: fill 0.1s linear;
-}
-
-.main-body {
-  opacity: 100%;
-  fill: transparent;
-  transition: fill 0.3s linear;
-}
-
-.heart:hover .main-body {
-  fill: var(--heart-contour);
-  transition: fill 0.3s 0.05s linear;
-}
-
-.core {
-  fill: transparent;
-  transition: fill 0.3s 0.03s linear;
-}
-
-.heart:hover .core {
-  fill: var(--heart-contour);
-  transition: fill 0.3s linear;
-}
-
-.sparks {
-  opacity: 0;
+.card__icon-button:focus-visible {
+  border: 2px solid var(--main-color);
 }
 
 .card__like-button {
