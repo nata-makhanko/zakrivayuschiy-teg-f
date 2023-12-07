@@ -38,6 +38,7 @@ input {
   background-color: transparent;
   border-color: transparent;
   font-family: var(--accent-font), sans-serif;
+  box-sizing: border-box;
 }
 
 ul,
