@@ -37,7 +37,7 @@ input {
   font-size: inherit;
   background-color: transparent;
   border-color: transparent;
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font), fantasy;
   box-sizing: border-box;
 }
 

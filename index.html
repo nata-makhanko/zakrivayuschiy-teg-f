@@ -18,8 +18,8 @@
   </head>
   <body class="page">
     <header class="header">
-      <h1 class="header__title">&lt;/html&gt;</h1>
-      <p class="header__subtitle">Закрывающий тег</p>
+      <a class="header__title">&lt;/html&gt;</a>
+      <h1 class="header__subtitle">Закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -159,7 +159,7 @@
         </div>
         <div class="main__description_wrapper">
           <p class="main__card_description">Всё это время вы&nbsp;были не&nbsp;одиноки (хотя, возможно, иногда и&nbsp;чувствовали, что одни против целого мира). Вас окружали одногруппники, команда сопровождения и&nbsp;просто близкие люди, которым можно пожаловаться, если очередной макет просто так не&nbsp;поддавался. Осваивать что-то новое легче, когда рядом есть единомышленники, не&nbsp;правда&nbsp;ли?</p>
-          <p class="main__card_description">Каким-то образом в&nbsp;github у&nbsp;меня оказалось несколько версий одного и&nbsp;того&nbsp;же проекта, первая версия&nbsp;&mdash; это шаблон, вторая версия&nbsp;&mdash; готовый проект, при этом на&nbsp;ревью прикреплялся шаблон, но&nbsp;об&nbsp;этом я&nbsp;узанала после того, как у&nbsp;меня 2&nbsp;раза не&nbsp;приняли проект.</p>
+          <p class="main__card_description">Каким-то образом в&nbsp;github у&nbsp;меня оказалось несколько версий одного и&nbsp;того&nbsp;же проекта, первая версия&nbsp;&mdash; это шаблон, вторая версия&nbsp;&mdash; готовый проект, при этом на&nbsp;ревью прикреплялся шаблон, но&nbsp;об&nbsp;этом я&nbsp;узнала после того, как у&nbsp;меня 2&nbsp;раза не&nbsp;приняли проект.</p>
           <div class="main__buttons_wrapper">
             <button class="card__icon-button">
               <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -262,15 +262,17 @@
         <span class="button__text">Сохранить на&nbsp;память</span>
       </button>
       <dialog id="floppy-dialog">
-        <div class="dialog__text_wrapper">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39" class="dialog__svg">
-            <use href="./svg/floppy.svg#floppy">
-          </svg>
-          <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
-        </div>
-        <button class="button__close button" type="button" onclick="window['floppy-dialog'].close()">
-          <span class="button__text">ОК</span>
-        </button>
+        <form>
+          <div class="dialog__text_wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39" class="dialog__svg">
+              <use href="./svg/floppy.svg#floppy">
+            </svg>
+            <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
+          </div>
+          <button class="button__close button" type="submit">
+            <span class="button__text">ОК</span>
+          </button>
+        </form>
       </dialog> 
     </main>
     <script src="./scripts/like.js"></script>

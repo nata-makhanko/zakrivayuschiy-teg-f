@@ -53,7 +53,7 @@
 }
 
 .like-icon:active .core {
-  fill: var(--heart-main-body);
+  fill: var(--heart-main-body); 
   transition: fill 0.3s linear;
 }
 

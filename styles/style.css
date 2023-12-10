@@ -23,7 +23,7 @@
   background-size: cover;
   background-attachment: fixed;
   width: var(--width-content);
-  padding: 102px 0;
+  padding: 87px 0;
   box-sizing: border-box;
 }
 
@@ -38,9 +38,9 @@
   background-color: var(--background-color);
   text-align: center;
   margin: 0 auto;
-  padding: 120px 14px 25px;
+  padding: 121px 14px 25px;
   box-sizing: border-box;
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font), fantasy;
   text-transform: uppercase;
   margin-block-end: 100px;
   border: 2px solid var(--main-color);
@@ -48,6 +48,7 @@
 
 
 .header__title {
+  display: block;
   margin-block-end: 20px;
   font-size: clamp(3.0625rem, 2.7292rem + 1.4815vw, 4.0625rem);
 }
@@ -133,8 +134,12 @@
 }
 
 .main__card_wrapper {
-  margin-block-end: 57px;
+  margin-block-end: 56px;
   border: 2px solid var(--main-color);
+}
+
+.main > .article:last-of-type {
+  margin-block-end: 44px;
 }
 
 .main__card_title {
@@ -155,10 +160,10 @@
   position: absolute;
   z-index: 1;
   font-size: 14px;
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font), fantasy;
   text-transform: uppercase;
-  right: 25px;
-  top: 25px;
+  right: 12px;
+  top: 22px;
   opacity: 0.5;
   text-shadow: 0 0 1px var(--text-stroke-color);
   mix-blend-mode: hard-light;
@@ -206,9 +211,12 @@
 }
 
 .main__description_wrapper {
+  min-height: 308px;
   background-color: var(--background-color);
   padding: 25px;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
 .main__card_description {
@@ -219,6 +227,7 @@
 .main__buttons_wrapper {
   display: flex;
   justify-content: end;
+  margin-top: auto;
 }
 
 .card__icon-button:focus {
@@ -290,7 +299,7 @@
   mix-blend-mode: difference;
 }
 
-dialog {
+dialog[open]  {
   background-color: var(--background-color);
   border: 2px solid var(--main-color);
   color: var(--main-color);
@@ -323,7 +332,7 @@ dialog:not([close]) .dialog__text_wrapper {
 .dialog__text {
   text-transform: uppercase;
   font-size: 14px;
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font), fantasy;
   line-height: 150%;
 }
 
@@ -335,6 +344,23 @@ dialog:not([close]) .dialog__text_wrapper {
 
 @media (width > 375px) {
 
+  .header {
+    padding: 137px 14px 25px;
+  }
+
+  .main__image_subtitle {
+    right: 25px;
+    top: 25px;
+  }
+
+  .main__card_wrapper {
+    margin-block-end: 57px;
+  }
+
+  .main__description_wrapper > .main__card_description:last-of-type {
+    margin-block-end: 46px;
+  }
+
   .button_save {
     flex-wrap: nowrap;
     max-width: 339px;
@@ -344,7 +370,7 @@ dialog:not([close]) .dialog__text_wrapper {
     block-size: 1.3125rem;
   }
 
-  dialog {
+  dialog[open] {
     padding: 30px;
     max-width: 357px;
   }
