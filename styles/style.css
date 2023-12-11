@@ -23,7 +23,7 @@
   background-size: cover;
   background-attachment: fixed;
   width: var(--width-content);
-  padding: 87px 0;
+  padding: 100px 0;
   box-sizing: border-box;
 }
 
@@ -134,7 +134,7 @@
 }
 
 .main__card_wrapper {
-  margin-block-end: 56px;
+  margin-block-end: 48px;
   border: 2px solid var(--main-color);
 }
 
@@ -221,7 +221,7 @@
 
 .main__card_description {
   font-size: 18px;
-  margin-block-end: 27px;
+  margin-block-end: 25px;
 }
 
 .main__buttons_wrapper {
@@ -354,11 +354,15 @@ dialog:not([close]) .dialog__text_wrapper {
   }
 
   .main__card_wrapper {
-    margin-block-end: 57px;
+    margin-block-end: 45px;
   }
 
-  .main__description_wrapper > .main__card_description:last-of-type {
-    margin-block-end: 46px;
+  .main .main__card_wrapper:last-of-type {
+    margin-block-end: 47px;
+  }
+
+  .main__description_wrapper {
+    min-height: 224px;
   }
 
   .button_save {
